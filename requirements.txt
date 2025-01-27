@@ -4,3 +4,4 @@ git+https://github.com/MarshalX/yandex-music-api/@main
 music-tag
 loguru
 requests
+moviepy
