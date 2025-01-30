@@ -78,6 +78,7 @@ def download_and_cut_track(chat_id, track_url, start_time, end_time):
         track = client.tracks(track_id)
         track_info = client.tracks_download_info(track_id=track_id, get_direct_links=True)
         track_name = track[0].title.encode('utf-8').decode('utf-8')
+        track_name = "sample"
         track_info.sort(reverse=True, key=lambda key: key['bitrate_in_kbps'])
         client.request.download(url=track_info[0]['direct_link'],
                 filename=track_path
